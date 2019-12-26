@@ -1,0 +1,7 @@
+<input type="text" [(ngModel)]="user" (keyup.enter)="addUser()">
+<br>
+<div *ngIf="users && users.length > 0">
+    <ul>
+        <li *ngFor="let user of users">{{user}}</li>
+    </ul>
+</div>

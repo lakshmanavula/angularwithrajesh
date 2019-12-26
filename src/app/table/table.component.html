@@ -1,0 +1,17 @@
+
+<h3>{{title}}</h3>
+
+<input type="text" [(ngModel)]="message" style="width: 500px; height: 30px;"><br>
+
+<button (click)="saveData()" [disabled]="checkData()">Save Data</button>
+
+<hr>
+{{message}}
+
+<form #user>
+  <input type="text" name="name"><br>
+  <input type="number" name="age"><br>
+  <button (click)="register(user)">Register</button>
+</form>
+
+<img [src]="imageLocation">
